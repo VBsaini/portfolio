@@ -1,0 +1,33 @@
+.navOuter {
+    background-color: black;
+}
+.navlist {
+    display: flex;
+    justify-content: flex-start;
+}
+.navlist_li {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+}
+.nav {
+    margin: 0 20px;
+}
+li {
+    list-style: none;
+    margin: 10px 6px;
+    font-size: 27px;
+}
+li > a {
+    color: rgb(192, 191, 191);
+    text-decoration: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        sans-serif;
+}
+.logo {
+    justify-self: flex-start !important;
+}
+.blue {
+    color: rgb(28, 140, 231);
+}
