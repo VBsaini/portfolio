@@ -1,0 +1,10 @@
+.app {
+    background-color: darkcyan;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
