@@ -53,7 +53,8 @@
         sans-serif;
     font-size: 24px;
 }
-.next {
+.next,
+.prev {
     font-size: 200px;
     position: absolute;
     top: 60px;
@@ -61,6 +62,7 @@
     height: 100%;
     align-items: center;
     right: 4px;
+    opacity: 0.4;
     opacity: 0.7;
     color: white;
     cursor: pointer;
@@ -73,13 +75,15 @@
     z-index: -1;
     top: -2px;
     right: -6px;
+    opacity: 0.4;
     height: 100%;
     opacity: 0.9;
     transition: background 250ms;
     filter: blur(2px);
 }
-.next:hover::before {
-    background: rgb(48, 48, 48);
+.next:hover::before,
+.prev:hover::before {
+    background: rgb(26, 204, 130);
 }
 @keyframes up {
     from {

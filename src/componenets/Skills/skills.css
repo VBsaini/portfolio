@@ -1,0 +1,68 @@
+.skills {
+    height: 92.4vh;
+}
+.img {
+    width: 10vw;
+    height: 70%;
+    padding: 10px;
+    overflow: hidden;
+}
+.skills_div_relative {
+    position: relative;
+    margin: 20px 0;
+    height: 100%;
+}
+.Skills_div {
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+    text-align: center;
+}
+.Skills_div::before {
+    z-index: -1;
+    opacity: 0.4;
+    height: 100%;
+    /* background-color: black; */
+    background-color: rgb(26, 204, 130);
+    filter: blur(2px);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+}
+.skills_text {
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+.prev {
+    left: 0;
+    width: 7vw;
+}
+.Tilt {
+    height: 100%;
+}
+.prev::before {
+    content: "";
+    position: absolute;
+    width: 105%;
+    padding: 0 6px;
+    z-index: -1;
+    top: -2px;
+    right: -6px;
+    height: 100%;
+    opacity: 0.9;
+    transition: background 250ms;
+    filter: blur(2px);
+}
+.img_container_div {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

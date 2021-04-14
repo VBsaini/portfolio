@@ -11,11 +11,15 @@ function Particle() {
                 params={{
                     particles: {
                         number: {
-                            value: 120,
+                            value: 80,
                         },
                         color: "#ffffff",
                         size: {
                             value: 4.3,
+                        },
+                        line_linked: {
+                            color: "rgb(0,0,128)",
+                            opacity: 0.5,
                         },
                     },
                     interactivity: {
@@ -24,12 +28,6 @@ function Particle() {
                             onhover: {
                                 enable: true,
                                 mode: "repulse",
-                            },
-                            resize: true,
-                            onresize: {
-                                enable: true,
-                                density_auto: true,
-                                density_area: 800, // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
                             },
                         },
                     },

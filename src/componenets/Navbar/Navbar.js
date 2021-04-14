@@ -27,17 +27,46 @@ class Navbar extends React.Component {
                             <li>
                                 <a
                                     href="#"
+                                    onClick={() => {
+                                        this.props.Next("Home");
+                                    }}
+                                    onMouseEnter={() => {
+                                        this.animationBlue("Home");
+                                    }}
+                                    onMouseLeave={() => {
+                                        this.animationWhite("Home", true);
+                                    }}
+                                    onFocus={() => {
+                                        this.animationBlue("Home");
+                                    }}
+                                    onBlur={() => {
+                                        this.animationWhite("Home", true);
+                                    }}
+                                    id="Home"
+                                >
+                                    <span>H</span>
+                                    <span>o</span>
+                                    <span>m</span>
+                                    <span>e</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    onClick={() => {
+                                        this.props.Next("Skills");
+                                    }}
                                     onMouseEnter={() => {
                                         this.animationBlue("Skills");
                                     }}
                                     onMouseLeave={() => {
-                                        this.animationWhite("Skills");
+                                        this.animationWhite("Skills", true);
                                     }}
                                     onFocus={() => {
                                         this.animationBlue("Skills");
                                     }}
                                     onBlur={() => {
-                                        this.animationWhite("Skills");
+                                        this.animationWhite("Skills", true);
                                     }}
                                     id="Skills"
                                 >
@@ -56,13 +85,16 @@ class Navbar extends React.Component {
                                         this.animationBlue("Projects");
                                     }}
                                     onMouseLeave={() => {
-                                        this.animationWhite("Projects");
+                                        this.animationWhite("Projects", true);
                                     }}
                                     onFocus={() => {
                                         this.animationBlue("Projects");
                                     }}
                                     onBlur={() => {
-                                        this.animationWhite("Projects");
+                                        this.animationWhite("Projects", true);
+                                    }}
+                                    onClick={() => {
+                                        this.props.Next("Projects");
                                     }}
                                     id="Projects"
                                 >
@@ -79,17 +111,20 @@ class Navbar extends React.Component {
                             <li>
                                 <a
                                     href="#"
+                                    onClick={() => {
+                                        this.props.Next("Contact");
+                                    }}
                                     onMouseEnter={() => {
                                         this.animationBlue("Contact");
                                     }}
                                     onMouseLeave={() => {
-                                        this.animationWhite("Contact");
+                                        this.animationWhite("Contact", true);
                                     }}
                                     onFocus={() => {
                                         this.animationBlue("Contact");
                                     }}
                                     onBlur={() => {
-                                        this.animationWhite("Contact");
+                                        this.animationWhite("Contact", true);
                                     }}
                                     id="Contact"
                                 >
@@ -100,7 +135,7 @@ class Navbar extends React.Component {
                                     <span>a</span>
                                     <span>c</span>
                                     <span>t</span>
-                                    <span>_</span>
+                                    <span> </span>
                                     <span>M</span>
                                     <span>e</span>
                                 </a>
@@ -119,12 +154,17 @@ class Navbar extends React.Component {
         }
     }
 
-    async animationWhite(string) {
-        if (!(string == this.state.Selected)) {
-            const spans = document.getElementById(string).childNodes;
-            for (const word of spans) {
-                let delayres = await this.delay(50);
-                this.removeclass(word);
+    async animationWhite(string, absolute = false) {
+        await this.delay(50);
+        if (!(string === this.state.Selected)) {
+            if (absolute) {
+                const spans = document.getElementById(string).childNodes;
+                console.log(string, this.state.Selected);
+                console.log(!(string === this.state.Selected));
+                for (const word of spans) {
+                    await this.delay(50);
+                    this.removeclass(word);
+                }
             }
         }
     }
@@ -136,15 +176,25 @@ class Navbar extends React.Component {
             }, delayInms);
         });
     }
-    func = (method, string, string2 = "") => {
-        if (method == "blue") {
-            this.animationBlue(string);
-        } else {
-            this.animationWhite(string);
-        }
+    func = (method, string = "", string2 = "") => {
         if (string2) {
             this.setState({
                 Selected: string2,
+            });
+        }
+        if (method == "blue") {
+            this.animationBlue(string);
+        } else if (method == "White") {
+            console.log("this.string", this.state.Selected);
+            const strings = ["Home", "Contact", "Projects", "Skills"];
+            strings.forEach((arrstring) => {
+                if (
+                    document
+                        .getElementById(arrstring)
+                        .firstChild.classList.contains("blue")
+                ) {
+                    this.animationWhite(arrstring, true);
+                }
             });
         }
     };
