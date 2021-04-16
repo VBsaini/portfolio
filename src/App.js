@@ -43,7 +43,7 @@ class App extends Component {
             this.state.Navfunc("blue", "Contact", "Contact");
             this.state.Navfunc("White");
 
-            component = <Contact_me></Contact_me>;
+            component = <Contact_me Next={this.Next}></Contact_me>;
         }
         return (
             <div className="App">

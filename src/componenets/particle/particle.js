@@ -1,5 +1,4 @@
 import react from "react";
-import reactDom from "react-dom";
 import Particles from "react-particles-js";
 
 function Particle() {

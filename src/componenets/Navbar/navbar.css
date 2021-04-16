@@ -1,5 +1,31 @@
 .navOuter {
+    position: relative;
+    z-index: 2;
+    transform: translatey(-80px);
+    transition: transform 0.5s;
+}
+.navAnimation {
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
+}
+.navAnimation:hover .navOuter {
+    transform: translateY(0);
+}
+.navAnimation .navOuter::before {
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.6;
     background-color: black;
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    margin: 0 -5px;
+    margin-top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
 }
 .navlist {
     display: flex;

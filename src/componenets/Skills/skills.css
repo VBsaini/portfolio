@@ -47,7 +47,7 @@
 .Tilt {
     height: 100%;
 }
-.prev::before {
+/* .prev::before {
     content: "";
     position: absolute;
     width: 105%;
@@ -59,7 +59,7 @@
     opacity: 0.9;
     transition: background 250ms;
     filter: blur(2px);
-}
+} */
 .img_container_div {
     overflow: hidden;
     display: flex;

@@ -1,6 +1,6 @@
 import react from "react";
-import reactDom from "react-dom";
 import "./Home.css";
+import Bounce from "react-reveal/Bounce";
 function Home(props) {
     return (
         <div className="home">
@@ -10,29 +10,35 @@ function Home(props) {
                     Portfolio
                 </p>
             </div>
+
             <h1 className="words">
                 I am a{" "}
-                <span className="container">
-                    <span
-                        className="upArrow ta1"
-                        onClick={(e) => {
-                            animate("up", e);
-                        }}
-                    >
-                        {"<"}
+                <Bounce left cascade>
+                    <span className="container dev_span">
+                        <span
+                            className="upArrow ta1"
+                            onClick={(e) => {
+                                animate("up", e);
+                            }}
+                        >
+                            {"<"}
+                        </span>
+                        <Bounce left cascade>
+                            <span id="words" className="word">
+                                Developer
+                            </span>
+                        </Bounce>
+
+                        <span
+                            className="downArrow ta1"
+                            onClick={(e) => {
+                                animate("down", e);
+                            }}
+                        >
+                            {"/>"}
+                        </span>
                     </span>
-                    <span id="words" className="word">
-                        Developer
-                    </span>
-                    <span
-                        className="downArrow ta1"
-                        onClick={(e) => {
-                            animate("down", e);
-                        }}
-                    >
-                        {"/>"}
-                    </span>
-                </span>
+                </Bounce>
             </h1>
             <div className="container-text">
                 <div className="who">
