@@ -1,0 +1,98 @@
+.black {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.modal_div {
+    top: -10vh;
+    width: 100vw;
+    z-index: 50;
+    height: 120.4vh;
+    position: absolute;
+    overflow: hidden;
+}
+.modal {
+    color: black;
+    font-size: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    padding: 4rem;
+    z-index: 20;
+    top: 50%;
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.modal p {
+    margin-bottom: 10px;
+}
+.modal_btn {
+    padding: 5px 10px;
+    margin: 0 50%;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+    transform: translate(-50%);
+    font-size: 20px;
+    z-index: 2;
+    color: black;
+    transition: all 0s;
+    position: relative;
+}
+.smallScreen {
+    overflow: hidden;
+}
+.smallScreen .modal_hover {
+    z-index: 40;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s 0.3s;
+}
+.smallScreen .modal_hover_show {
+    z-index: 40;
+    opacity: 1;
+    pointer-events: all;
+}
+.modal_screen_hide {
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+    z-index: -10;
+}
+.hide {
+    display: none;
+}
+.modal_btn::before {
+    content: "";
+    transition: all 0.3s;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    background-color: greenyellow;
+}
+.modal_btn:hover,
+.modal_btn:focus {
+    border-color: transparent;
+}
+.modal_btn:hover::before,
+.modal_btn:focus::before {
+    transform: scaleX(1);
+}
+.modal::before {
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: white;
+}

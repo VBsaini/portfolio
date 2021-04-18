@@ -19,15 +19,6 @@ import Zoom from "react-reveal/Zoom";
 function Skills(props) {
     return (
         <div className="skills">
-            <div
-                className="prev"
-                id="prev"
-                onClick={() => {
-                    props.Next("Home");
-                }}
-            >
-                {"<"}
-            </div>
             <div className="container_skills">
                 <div className="one img_container_div">
                     <Tilt
@@ -184,7 +175,7 @@ function Skills(props) {
                         className="Tilt"
                         options={{ perspective: 500, max: 60 }}
                     >
-                        <Zoom>
+                        <Zoom className="zoom">
                             {" "}
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
@@ -235,6 +226,15 @@ function Skills(props) {
                         </Zoom>
                     </Tilt>
                 </div>
+            </div>{" "}
+            <div
+                className="prev"
+                id="prev"
+                onClick={() => {
+                    props.Next("Home");
+                }}
+            >
+                {"<"}
             </div>
             <div
                 className="next"

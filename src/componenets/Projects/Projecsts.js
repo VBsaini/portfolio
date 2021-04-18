@@ -48,7 +48,7 @@ class Projects extends React.Component {
                                                         target="_blank"
                                                     >
                                                         Live preview{" "}
-                                                        <i class="fab fa-github"></i>
+                                                        <i class="fab fa-chrome"></i>
                                                     </a>
                                                 </p>
                                             </div>

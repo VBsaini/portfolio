@@ -24,10 +24,12 @@ class Contact_me extends React.Component {
                 )
             ) {
                 if (!this.state.validEmail) {
-                    console.log("state changed");
                     this.setState({ validEmail: true, startAnimation: false });
                 }
-            } else if (!(e.target === document.activeElement)) {
+            } else if (
+                !(e.target === document.activeElement) &&
+                !e.target.classList.contains("not-empty")
+            ) {
                 this.setState({ startAnimation: false });
             } else {
                 this.setState({ startAnimation: true, validEmail: false });
@@ -149,12 +151,13 @@ class Contact_me extends React.Component {
                                     </label>
                                 </div>
                                 <div className="input_div">
-                                    <input
+                                    <button
                                         type="submit"
                                         name="submit"
                                         className="contact_input submit_btn"
-                                        value="Submit"
-                                    />
+                                    >
+                                        Submit
+                                    </button>
                                 </div>
                             </form>
                         </div>

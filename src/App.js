@@ -6,11 +6,13 @@ import Skills from "./componenets/Skills/Skills";
 import Projects from "./componenets/Projects/Projecsts";
 import { Component } from "react";
 import Contact_me from "./componenets/Contact_me/Contact_me";
+import Modal from "./componenets/Modal/Modal";
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             Page: "Home",
+            smallScreen: false,
             Navfunc: () => {},
         };
     }
@@ -23,6 +25,14 @@ class App extends Component {
         this.setState({ Navfunc: Navfunction });
     };
     render() {
+        if (
+            document.body.clientWidth < document.body.clientHeight &&
+            !this.state.smallScreen
+        ) {
+            console.log(document.body.clientHeight);
+            console.log(document.body.clientWidth);
+            this.setState({ smallScreen: true });
+        }
         const { Page } = this.state;
         let component;
         if (Page === "Home") {
@@ -54,6 +64,7 @@ class App extends Component {
                         Next={this.Next}
                     ></Navbar>
                     <Particle></Particle>
+                    <Modal smallScreen={this.state.smallScreen}></Modal>
                     {component}
                 </div>
             </div>

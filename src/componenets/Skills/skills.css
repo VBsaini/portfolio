@@ -21,6 +21,9 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
     text-align: center;
 }
+.zoom {
+    height: 100%;
+}
 .Skills_div::before {
     z-index: -1;
     opacity: 0.4;

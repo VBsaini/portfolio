@@ -113,6 +113,8 @@
 }
 .disabled {
     text-decoration: line-through;
+    opacity: 0;
+    pointer-events: none;
 }
 .disabled a:hover {
     color: black;

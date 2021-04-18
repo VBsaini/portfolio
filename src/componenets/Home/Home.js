@@ -44,11 +44,10 @@ function Home(props) {
                 <div className="who">
                     <h3 className="who_h3">Who Am I ?</h3>
                     <p id="who" className="who_p" id="text">
-                        I am a developer. at first I was nothing but one day
-                        during quarantine my friend introduced to coding web
-                        development to be exact and i was in love, i knew
-                        exactly what to do when i grow so i started studing and
-                        i completed many courses.
+                        I am a developer during quarantine my friend introduced
+                        to coding web development to be exact and i was in love
+                        i knew exactly what to do further in my life. i
+                        completed many courses and learned various things.
                     </p>
                 </div>
             </div>
@@ -71,10 +70,10 @@ async function animate(method, event) {
     let text_txtcontent;
     if (word.textContent == "Student") {
         element = "Developer";
-        text_txtcontent = `I am a developer at first I was gamer but one day
+        text_txtcontent = `I am a developer
         during quarantine my friend introduced to coding web
         development to be exact and i was in love i knew
-        exactly what to do when i grow so i started studing and
+        exactly what to do further in my life.
         i completed many courses and learned various things.`;
     } else {
         element = "Student";
