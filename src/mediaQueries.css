@@ -1,0 +1,193 @@
+/* ##################### width ######################## */
+@media only Screen and (max-width: 1256px) {
+    .intro {
+        font-size: 30px;
+        padding-top: 120px;
+    }
+    .words {
+        font-size: 50px;
+    }
+}
+
+@media only Screen and (max-width: 1104px) {
+    .intro {
+        font-size: 25px;
+        padding-top: 120px;
+    }
+    .words {
+        font-size: 40px;
+    }
+    .who_h3 {
+        font-size: 20px;
+    }
+    .next {
+        font-size: 150px;
+    }
+    .who_p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .who {
+        color: white;
+        margin: 124px 200px 0px 200px;
+    }
+}
+@media only Screen and (max-width: 784px) {
+    .intro {
+        font-size: 20px;
+    }
+    .words {
+        font-size: 30px;
+    }
+    .next {
+        font-size: 100px;
+    }
+    .who {
+        color: white;
+        margin: 12vh 150px 0px 150px;
+    }
+    .who_h3 {
+        font-size: 18px;
+    }
+    .who_p {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .particle {
+        width: 150%;
+        height: 150%;
+    }
+}
+@media only Screen and (max-width: 660px) {
+    .intro {
+        font-size: 15px;
+    }
+    .words {
+        font-size: 25px;
+    }
+    .who {
+        color: white;
+        margin: 12vh 100px 0px 100px;
+    }
+}
+
+@media only Screen and (max-width: 502px) {
+    .intro {
+        font-size: 12px;
+    }
+    .words {
+        font-size: 20px;
+    }
+    .who_h3 {
+        font-size: 15px;
+    }
+    .who_p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .who {
+        color: white;
+        margin: 12vh 70px 0px 70px;
+    }
+    .next {
+        font-size: 50px;
+    }
+}
+
+@media only Screen and (max-width: 382px) {
+    .intro {
+        font-size: 10px;
+    }
+    .words {
+        font-size: 15px;
+    }
+    .who_h3 {
+        font-size: 12px;
+    }
+    .who_p {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    .who {
+        color: white;
+        margin: 60px 70px 0px 70px;
+    }
+}
+@media only Screen and (min-width: 1773px) {
+    .intro {
+        font-size: 50px;
+    }
+    .words {
+        font-size: 55px;
+    }
+    .who_h3 {
+        font-size: 32px;
+    }
+    .who_p {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .who {
+        color: white;
+        margin: 200px 300px 0px 300px;
+    }
+    .next {
+        font-size: 250px;
+    }
+}
+@media only Screen and (min-width: 2000px) {
+    .intro {
+        font-size: 60px;
+    }
+    .words {
+        font-size: 68px;
+    }
+    .who_h3 {
+        font-size: 42px;
+    }
+    .who_p {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    .who {
+        color: white;
+        margin: 200px 350px 0px 350px;
+    }
+    .next {
+        font-size: 300px;
+    }
+}
+/* ##################### height ######################## */
+@media only Screen and (max-height: 800px) {
+    .intro {
+        padding-top: 100px;
+    }
+    .who {
+        margin-top: 100px;
+    }
+}
+@media only Screen and (max-height: 531px) {
+    .intro {
+        padding-top: 60px;
+    }
+    .who {
+        margin-top: 80px;
+    }
+}
+
+@media only Screen and (max-height: 451px) {
+    .intro {
+        padding-top: 20px;
+    }
+    .who {
+        margin-top: 60px;
+    }
+}
+@media only Screen and (max-height: 400px) {
+    .intro {
+        padding-top: 0px;
+    }
+    .who {
+        margin-top: 30px;
+    }
+}

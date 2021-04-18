@@ -58,7 +58,7 @@ function Home(props) {
                     props.Next("Skills");
                 }}
             >
-                {">"}
+                <p>{">"}</p>
             </div>
         </div>
     );

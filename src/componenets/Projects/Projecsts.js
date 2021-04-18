@@ -213,7 +213,7 @@ class Projects extends React.Component {
                         this.state.Next("Skills");
                     }}
                 >
-                    {"<"}
+                    <p>{"<"}</p>
                 </div>
                 <div
                     className="next"
@@ -222,7 +222,7 @@ class Projects extends React.Component {
                         this.state.Next("Contact");
                     }}
                 >
-                    {">"}
+                    <p>{">"}</p>
                 </div>
             </div>
         );

@@ -7,6 +7,7 @@ import Projects from "./componenets/Projects/Projecsts";
 import { Component } from "react";
 import Contact_me from "./componenets/Contact_me/Contact_me";
 import Modal from "./componenets/Modal/Modal";
+import "./mediaQueries.css";
 class App extends Component {
     constructor(props) {
         super(props);

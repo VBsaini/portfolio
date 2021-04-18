@@ -234,7 +234,7 @@ function Skills(props) {
                     props.Next("Home");
                 }}
             >
-                {"<"}
+                <p>{"<"}</p>
             </div>
             <div
                 className="next"
@@ -243,7 +243,7 @@ function Skills(props) {
                     props.Next("Projects");
                 }}
             >
-                {">"}
+                <p>{">"}</p>
             </div>
         </div>
     );

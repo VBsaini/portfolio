@@ -44,15 +44,6 @@ class Contact_me extends React.Component {
     render() {
         return (
             <div className="contact_div">
-                <div
-                    className="prev"
-                    id="prev"
-                    onClick={() => {
-                        this.state.Next("Projects");
-                    }}
-                >
-                    {"<"}
-                </div>
                 <div className="contact_container">
                     <div className="relative_contact_container">
                         <h2 className="contact_h2">Contact Me here</h2>
@@ -162,6 +153,15 @@ class Contact_me extends React.Component {
                             </form>
                         </div>
                     </div>
+                </div>
+                <div
+                    className="prev"
+                    id="prev"
+                    onClick={() => {
+                        this.state.Next("Projects");
+                    }}
+                >
+                    <p>{"<"}</p>
                 </div>
             </div>
         );
