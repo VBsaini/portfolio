@@ -22,7 +22,6 @@
 }
 .contact_input {
     padding: 12px 0;
-    /* line-height: 40px; */
     margin: 20px 0;
     width: 100%;
     border: none;
@@ -46,6 +45,7 @@
 .contact_h2 {
     color: white;
     text-transform: capitalize;
+    text-align: center;
     font-size: 40px;
     letter-spacing: 3px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -92,12 +92,9 @@
     border-color: transparent;
 }
 .submit_btn:hover::before {
-    /* transform: scale(1, 0.1); */
-    /* top: -50%; */
     animation: submitleft 1s;
     animation-fill-mode: forwards;
     left: 0;
-    /* right: 0; */
 }
 .submit_btn:hover::after {
     animation: submitright 1s;

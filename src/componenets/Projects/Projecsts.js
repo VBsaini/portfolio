@@ -29,7 +29,11 @@ class Projects extends React.Component {
                                 <div className="projects_container">
                                     <div className="inner-card">
                                         <div className="back">
-                                            <p className="links_text">Links</p>
+                                            <div className="link_text">
+                                                <p className="links_text">
+                                                    Links
+                                                </p>
+                                            </div>
                                             <div className="links">
                                                 <p className="links_text">
                                                     <a
@@ -37,7 +41,7 @@ class Projects extends React.Component {
                                                         rel="noreferrer"
                                                         target="_blank"
                                                     >
-                                                        Github{" "}
+                                                        Github
                                                         <i class="fab fa-github"></i>
                                                     </a>
                                                 </p>
@@ -47,7 +51,7 @@ class Projects extends React.Component {
                                                         rel="noreferrer"
                                                         target="_blank"
                                                     >
-                                                        Live preview{" "}
+                                                        Live preview
                                                         <i class="fab fa-chrome"></i>
                                                     </a>
                                                 </p>

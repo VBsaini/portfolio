@@ -7,9 +7,27 @@
     .words {
         font-size: 50px;
     }
+    .skills_text {
+        font-size: 15px;
+    }
+    .project_img {
+        height: 18vh;
+    }
 }
 
 @media only Screen and (max-width: 1104px) {
+    .modal p {
+        font-size: 20px;
+    }
+    li {
+        font-size: 25px;
+    }
+    .front p {
+        font-size: 10px;
+    }
+    .project_h2 {
+        font-size: 22px;
+    }
     .intro {
         font-size: 25px;
         padding-top: 120px;
@@ -20,7 +38,8 @@
     .who_h3 {
         font-size: 20px;
     }
-    .next {
+    .next,
+    .prev {
         font-size: 150px;
     }
     .who_p {
@@ -31,15 +50,82 @@
         color: white;
         margin: 124px 200px 0px 200px;
     }
+    li {
+        font-size: 20px;
+    }
+    @media only Screen and (max-height: 531px) {
+        .Tilt {
+            padding: 5px 0;
+        }
+    }
+    @media only Screen and (max-height: 500px) {
+        .Tilt {
+            padding: 0px 0;
+        }
+    }
+    @media only Screen and (max-height: 451px) {
+        .Tilt {
+            padding: 0;
+        }
+        .one .skills_div_relative {
+            margin-top: -10px;
+        }
+    }
+    @media only Screen and (max-height: 420px) {
+        .one {
+            margin-top: -30px;
+        }
+    }
+    @media screen and(min-height:600px) {
+        .Tilt {
+            padding: 20px;
+        }
+    }
+}
+@media only Screen and (max-width: 900px) {
+    .project_h2 {
+        font-size: 18px;
+    }
+    .modal p {
+        font-size: 15px;
+    }
+    .modal {
+        padding: 40px;
+    }
+    .front p {
+        font-size: 8px;
+    }
 }
 @media only Screen and (max-width: 784px) {
     .intro {
         font-size: 20px;
     }
+    .project_h2 {
+        font-size: 14px;
+    }
+    .grid-container {
+        margin: 50px 100px;
+    }
+    .front p {
+        font-size: 7px;
+    }
+    .skills_text {
+        font-size: 10px;
+    }
+    .modal p {
+        font-size: 10px;
+    }
+    .modal {
+        padding: 30px;
+    }
+    .modal_btn {
+        font-size: 10px;
+    }
     .words {
         font-size: 30px;
     }
-    .next {
+    .next,
+    .prev {
         font-size: 100px;
     }
     .who {
@@ -59,21 +145,50 @@
     }
 }
 @media only Screen and (max-width: 660px) {
+    li {
+        font-size: 15px;
+    }
+    .project_h2 {
+        font-size: 10px;
+    }
+    .front p {
+        font-size: 5px;
+    }
     .intro {
         font-size: 15px;
     }
     .words {
         font-size: 25px;
     }
+    .relative_contact_container {
+        padding: 30px;
+    }
+    .contact_input {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-40px);
+    }
+    .contact_h2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
     .who {
         color: white;
         margin: 12vh 100px 0px 100px;
     }
+    .grid-container {
+        margin: 50px 80px;
+    }
 }
-
 @media only Screen and (max-width: 502px) {
     .intro {
         font-size: 12px;
+    }
+    .grid-container {
+        margin: 50px 30px;
     }
     .words {
         font-size: 20px;
@@ -89,8 +204,27 @@
         color: white;
         margin: 12vh 70px 0px 70px;
     }
-    .next {
+    .next,
+    .prev {
         font-size: 50px;
+    }
+    .skills_text {
+        font-size: 8px;
+    }
+    .relative_contact_container {
+        padding: 20px;
+    }
+    .contact_input {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-20px);
+    }
+    .contact_h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
     }
 }
 
@@ -117,6 +251,28 @@
     .intro {
         font-size: 50px;
     }
+    .grid-container {
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+    .relative_contact_container {
+        padding: 50px;
+    }
+    .contact_input {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-40px);
+    }
+    .contact_h2 {
+        font-size: 45px;
+        letter-spacing: 4px;
+    }
+    .input_label {
+        font-size: 25px;
+    }
     .words {
         font-size: 55px;
     }
@@ -131,13 +287,33 @@
         color: white;
         margin: 200px 300px 0px 300px;
     }
-    .next {
+    .next,
+    .prev {
         font-size: 250px;
     }
 }
 @media only Screen and (min-width: 2000px) {
     .intro {
         font-size: 60px;
+    }
+    .contact_h2 {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    .grid-container {
+        margin-left: 260px;
+        margin-right: 260px;
+    }
+    .relative_contact_container {
+        padding: 70px;
+    }
+    .contact_input {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-40px);
     }
     .words {
         font-size: 68px;
@@ -153,7 +329,8 @@
         color: white;
         margin: 200px 350px 0px 350px;
     }
-    .next {
+    .next,
+    .prev {
         font-size: 300px;
     }
 }
@@ -162,32 +339,110 @@
     .intro {
         padding-top: 100px;
     }
+
     .who {
         margin-top: 100px;
     }
+    .project_maindiv {
+        margin-top: -50px;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-20px);
+    }
+}
+@media only Screen and (max-height: 650px) {
+    .contact_div {
+        margin-top: -20px;
+    }
+    .contact_h2 {
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+    .contact_input {
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    .input_label {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+    .invalid-feedback {
+        font-size: 15px;
+    }
 }
 @media only Screen and (max-height: 531px) {
+    .contact_div {
+        margin-top: -30px;
+    }
     .intro {
         padding-top: 60px;
     }
     .who {
         margin-top: 80px;
     }
+    .contact_h2 {
+        padding-bottom: 5px;
+    }
+    .contact_input {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    .input_label {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-8px);
+    }
 }
-
 @media only Screen and (max-height: 451px) {
     .intro {
         padding-top: 20px;
     }
+    .contact_h2 {
+        font-size: 15px;
+    }
+    .input_label {
+        font-size: 13px;
+        padding: 13px 0;
+    }
+    .invalid-feedback {
+        font-size: 10px;
+    }
+    .contact_input {
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
     .who {
         margin-top: 60px;
     }
+    .contact_input {
+        margin-top: 0px 0;
+    }
+    .contact_input:focus + .input_label,
+    .contact_input.not-empty + .input_label {
+        transform: translateY(-20px);
+    }
 }
 @media only Screen and (max-height: 400px) {
+    .grid-container {
+        margin-top: 20px;
+    }
     .intro {
         padding-top: 0px;
     }
     .who {
         margin-top: 30px;
+    }
+    .contact_input {
+        margin: 5px 0;
+    }
+    .input_label {
+        padding: 8px 0;
+    }
+    .project_img {
+        object-fit: contain;
     }
 }

@@ -50,19 +50,13 @@
 .Tilt {
     height: 100%;
 }
-/* .prev::before {
-    content: "";
-    position: absolute;
-    width: 105%;
-    padding: 0 6px;
-    z-index: -1;
-    top: -2px;
-    right: -6px;
+.container_skills {
     height: 100%;
-    opacity: 0.9;
-    transition: background 250ms;
-    filter: blur(2px);
-} */
+}
+.Tilt {
+    padding: 15px 0;
+}
+
 .img_container_div {
     overflow: hidden;
     display: flex;

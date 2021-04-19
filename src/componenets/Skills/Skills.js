@@ -63,7 +63,7 @@ function Skills(props) {
                                 </div>
                             </div>
                         </Zoom>
-                    </Tilt>
+                    </Tilt>{" "}
                     <Tilt
                         className="Tilt"
                         options={{ perspective: 500, max: 60 }}
@@ -72,11 +72,11 @@ function Skills(props) {
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
                                     <img
-                                        src={bootstrap}
+                                        src={nodejs}
                                         className="img"
-                                        alt="Bootstrap"
+                                        alt="nodejs"
                                     />
-                                    <h3 className="skills_text">Bootstrap</h3>
+                                    <h3 className="skills_text ">Node Js</h3>
                                 </div>
                             </div>
                         </Zoom>
@@ -126,11 +126,11 @@ function Skills(props) {
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
                                     <img
-                                        src={js}
+                                        src={react}
                                         className="img"
-                                        alt="JavaScript"
+                                        alt="React"
                                     />
-                                    <h3 className="skills_text ">JavaScript</h3>
+                                    <h3 className="skills_text ">React</h3>
                                 </div>
                             </div>
                         </Zoom>
@@ -143,11 +143,11 @@ function Skills(props) {
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
                                     <img
-                                        src={mongo}
+                                        src={python}
                                         className="img"
-                                        alt="mongo DB"
+                                        alt="Python"
                                     />
-                                    <h3 className="skills_text">Mongo DB</h3>
+                                    <h3 className="skills_text">Python</h3>
                                 </div>
                             </div>
                         </Zoom>
@@ -162,11 +162,11 @@ function Skills(props) {
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
                                     <img
-                                        src={nodejs}
+                                        src={bootstrap}
                                         className="img"
-                                        alt="nodejs"
+                                        alt="Bootstrap"
                                     />
-                                    <h3 className="skills_text ">Node Js</h3>
+                                    <h3 className="skills_text">Bootstrap</h3>
                                 </div>
                             </div>
                         </Zoom>
@@ -199,11 +199,11 @@ function Skills(props) {
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
                                     <img
-                                        src={react}
+                                        src={js}
                                         className="img"
-                                        alt="React"
+                                        alt="JavaScript"
                                     />
-                                    <h3 className="skills_text ">React</h3>
+                                    <h3 className="skills_text ">JavaScript</h3>
                                 </div>
                             </div>
                         </Zoom>
@@ -216,11 +216,11 @@ function Skills(props) {
                             <div className="skills_div_relative">
                                 <div className="Skills_div">
                                     <img
-                                        src={python}
+                                        src={mongo}
                                         className="img"
-                                        alt="Python"
+                                        alt="mongo DB"
                                     />
-                                    <h3 className="skills_text">Python</h3>
+                                    <h3 className="skills_text">Mongo DB</h3>
                                 </div>
                             </div>
                         </Zoom>

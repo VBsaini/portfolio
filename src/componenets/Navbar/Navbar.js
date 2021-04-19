@@ -7,10 +7,12 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             Selected: "",
+            phone: false,
         };
     }
     componentDidMount() {
         this.props.func(this.func);
+        // if()
     }
     render() {
         return (
