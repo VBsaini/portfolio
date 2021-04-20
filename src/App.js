@@ -5,7 +5,7 @@ import Particle from "./componenets/particle/particle";
 import Skills from "./componenets/Skills/Skills";
 import Projects from "./componenets/Projects/Projecsts";
 import { Component } from "react";
-import Contact_me from "./componenets/Contact_me/Contact_me";
+import ContactMe from "./componenets/Contact_me/ContactMe";
 import Modal from "./componenets/Modal/Modal";
 import "./mediaQueries.css";
 class App extends Component {
@@ -30,8 +30,6 @@ class App extends Component {
             document.body.clientWidth < document.body.clientHeight &&
             !this.state.smallScreen
         ) {
-            console.log(document.body.clientHeight);
-            console.log(document.body.clientWidth);
             this.setState({ smallScreen: true });
         }
         const { Page } = this.state;
@@ -54,7 +52,7 @@ class App extends Component {
             this.state.Navfunc("blue", "Contact", "Contact");
             this.state.Navfunc("White");
 
-            component = <Contact_me Next={this.Next}></Contact_me>;
+            component = <ContactMe Next={this.Next}></ContactMe>;
         }
         return (
             <div className="App">

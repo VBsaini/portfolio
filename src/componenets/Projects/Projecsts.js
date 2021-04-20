@@ -1,20 +1,16 @@
 import React from "react";
 import "./Projects.css";
-// ####################### images ###########
 import space from "../../images/space_shooter.png";
 import cpploginpage from "../../images/cpplogipage.png";
 import yelpcamp from "../../images/yelpcamp.png";
 import smartbrain from "../../images/smartbrain.png";
 import Rotate from "react-reveal/Rotate";
-// ####################### customhook ###########
 import Customproject from "../Customhook/Customproject";
 class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            animation: true,
             Next: this.props.Next,
-            Selected: false,
         };
     }
     render() {
@@ -40,8 +36,8 @@ class Projects extends React.Component {
                         <Rotate top right>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
-                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                    "https://github.com/vaibhav-saini-Edifice/smart-brain",
+                                    "https://smart-brain-vishu.herokuapp.com/",
                                 ]}
                                 title={"Smart Brain"}
                                 desc={
@@ -55,10 +51,10 @@ class Projects extends React.Component {
                         <Rotate top left>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
-                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                    "https://github.com/vaibhav-saini-Edifice/loginPage",
+                                    "#",
                                 ]}
-                                Class={"relative_container login"}
+                                Class={"relative_container login disabled"}
                                 title={"Windows clr form"}
                                 desc={"windows clr form made with c++"}
                                 img={cpploginpage}
@@ -68,8 +64,8 @@ class Projects extends React.Component {
                         <Rotate top right>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
-                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                    "https://github.com/vaibhav-saini-Edifice/yelpcamp",
+                                    "https://yelpcamp-vishu.herokuapp.com/",
                                 ]}
                                 Class={"relative_container yelpcamp"}
                                 title={"YelpCamp"}

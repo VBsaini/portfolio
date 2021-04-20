@@ -2,7 +2,6 @@ import React from "react";
 import "./Modal.css";
 
 function Modal(props) {
-    let component;
     let smallScreen = props.smallScreen;
     return (
         <div className="modal_div">

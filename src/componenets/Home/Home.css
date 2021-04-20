@@ -1,5 +1,4 @@
 .home {
-    background: none;
     height: 92.4vh;
 }
 .words {
@@ -30,10 +29,12 @@
 }
 
 .up {
+    -webkit-animation: up 500ms forwards;
     animation: up 500ms forwards;
     display: inline-block;
 }
 .upA {
+    -webkit-animation: upA 500ms forwards;
     animation: upA 500ms forwards;
     display: inline-block;
 }
@@ -83,6 +84,7 @@
     height: 100%;
     opacity: 0.9;
     transition: background 250ms;
+    -webkit-filter: blur(2px);
     filter: blur(2px);
 }
 .prev::before {
@@ -97,6 +99,7 @@
     height: 100%;
     opacity: 0.9;
     transition: background 250ms;
+    -webkit-filter: blur(2px);
     filter: blur(2px);
 }
 .next:hover::before,
@@ -104,6 +107,16 @@
 .next:focus::before,
 .prev:focus::before {
     background: rgb(26, 204, 130);
+}
+@-webkit-keyframes up {
+    from {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-100px, 0px);
+        opacity: 0;
+    }
 }
 @keyframes up {
     from {
@@ -113,6 +126,16 @@
     to {
         transform: translate(-100px, 0px);
         opacity: 0;
+    }
+}
+@-webkit-keyframes upA {
+    from {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
 }
 @keyframes upA {
@@ -126,12 +149,24 @@
     }
 }
 .down {
+    -webkit-animation: down 500ms forwards;
     animation: down 500ms forwards;
     display: inline-block;
 }
 .downA {
+    -webkit-animation: downA 500ms forwards;
     animation: downA 500ms forwards;
     display: inline-block;
+}
+@-webkit-keyframes down {
+    from {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    to {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
 }
 @keyframes down {
     from {
@@ -141,6 +176,16 @@
     to {
         transform: translate(100px, 0px);
         opacity: 0;
+    }
+}
+@-webkit-keyframes downA {
+    from {
+        transform: translate(-100px, 0px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
 }
 @keyframes downA {

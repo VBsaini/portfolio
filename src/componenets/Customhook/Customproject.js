@@ -8,18 +8,49 @@ const CustomProject = ({ title, linkArray, Class, desc, img, linksText }) => {
                     <p className="links_text">Links</p>
                     <div className="links">
                         {linkArray.map((item, index) => {
-                            return (
-                                <p className="links_text" index={index}>
-                                    <a
-                                        href={item}
-                                        rel="noreferrer"
-                                        className={"a-links"}
-                                        target="_blank"
-                                    >
-                                        {linksText[index]}
-                                    </a>
-                                </p>
-                            );
+                            if (title === "Windows clr form") {
+                                if (index === 1) {
+                                    return (
+                                        <p className="links_text" index={index}>
+                                            <a
+                                                href={item}
+                                                rel="noreferrer"
+                                                className={"a-links"}
+                                                target="_blank"
+                                                className="preview"
+                                            >
+                                                {linksText[index]}
+                                            </a>
+                                        </p>
+                                    );
+                                } else {
+                                    return (
+                                        <p className="links_text" index={index}>
+                                            <a
+                                                href={item}
+                                                rel="noreferrer"
+                                                className={"a-links"}
+                                                target="_blank"
+                                            >
+                                                {linksText[index]}
+                                            </a>
+                                        </p>
+                                    );
+                                }
+                            } else {
+                                return (
+                                    <p className="links_text" index={index}>
+                                        <a
+                                            href={item}
+                                            rel="noreferrer"
+                                            className={"a-links"}
+                                            target="_blank"
+                                        >
+                                            {linksText[index]}
+                                        </a>
+                                    </p>
+                                );
+                            }
                         })}
                     </div>
                 </div>

@@ -7,12 +7,10 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             Selected: "",
-            phone: false,
         };
     }
     componentDidMount() {
         this.props.func(this.func);
-        // if()
     }
     render() {
         return (
@@ -164,7 +162,7 @@ class Navbar extends React.Component {
     async animationBlue(string) {
         const spans = document.getElementById(string).childNodes;
         for (const word of spans) {
-            let delayres = await this.delay(50);
+            await this.delay(50);
             this.addclass(word);
         }
     }
@@ -174,8 +172,6 @@ class Navbar extends React.Component {
         if (!(string === this.state.Selected)) {
             if (absolute) {
                 const spans = document.getElementById(string).childNodes;
-                console.log(string, this.state.Selected);
-                console.log(!(string === this.state.Selected));
                 for (const word of spans) {
                     await this.delay(50);
                     this.removeclass(word);
@@ -197,10 +193,9 @@ class Navbar extends React.Component {
                 Selected: string2,
             });
         }
-        if (method == "blue") {
+        if (method === "blue") {
             this.animationBlue(string);
-        } else if (method == "White") {
-            console.log("this.string", this.state.Selected);
+        } else if (method === "White") {
             const strings = ["Home", "Contact", "Projects", "Skills"];
             strings.forEach((arrstring) => {
                 if (

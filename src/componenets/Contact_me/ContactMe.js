@@ -173,21 +173,12 @@ class Contact_me extends React.Component {
 
 function sendEmail(e) {
     e.preventDefault();
-    emailjs
-        .sendForm(
-            "service_534rlm4",
-            "template_tyyizvg",
-            e.target,
-            "user_b6ksttCnHMGRKpvfzYyxe"
-        )
-        .then(
-            (result) => {
-                console.log(result.text);
-            },
-            (error) => {
-                console.log(error.text);
-            }
-        );
+    emailjs.sendForm(
+        "service_534rlm4",
+        "template_tyyizvg",
+        e.target,
+        "user_b6ksttCnHMGRKpvfzYyxe"
+    );
     e.target.reset();
 }
 export default Contact_me;

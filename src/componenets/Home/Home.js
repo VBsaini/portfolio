@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import "./Home.css";
 import Bounce from "react-reveal/Bounce";
 function Home(props) {
@@ -44,9 +44,9 @@ function Home(props) {
                 <div className="who">
                     <h3 className="who_h3">Who Am I ?</h3>
                     <p id="who" className="who_p" id="text">
-                        I am a developer during quarantine my friend introduced
-                        to coding web development to be exact and i was in love
-                        i knew exactly what to do further in my life. i
+                        I am a developer. during quarantine my friend introduced
+                        me to coding, web development to be exact and i was in
+                        love. i knew exactly what to do further in my life. i
                         completed many courses and learned various things.
                     </p>
                 </div>
@@ -63,22 +63,22 @@ function Home(props) {
         </div>
     );
 }
-async function animate(method, event) {
+async function animate(method) {
     const word = document.getElementById("words");
     const text = document.getElementById("text");
     let element;
     let text_txtcontent;
-    if (word.textContent == "Student") {
+    if (word.textContent === "Student") {
         element = "Developer";
-        text_txtcontent = `I am a developer
-        during quarantine my friend introduced to coding web
-        development to be exact and i was in love i knew
+        text_txtcontent = `I am a developer.
+        during quarantine my friend introduced me to coding, web
+        development to be exact and i was in love. i knew
         exactly what to do further in my life.
         i completed many courses and learned various things.`;
     } else {
         element = "Student";
         text_txtcontent = `I am 16 years old and I am from New Delhi, India and 
-        I study in class 10th apart from from studies my interest are gaming and coding.
+        I study in class 10th apart from studies my interest are gaming and coding.
         `;
     }
     word.classList.add(method);
