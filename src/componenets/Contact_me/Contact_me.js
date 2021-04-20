@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import Roll from "react-reveal/Roll";
 import "./Contact.css";
 import Fade from "react-reveal/Fade";
 class Contact_me extends React.Component {
@@ -45,114 +46,116 @@ class Contact_me extends React.Component {
         return (
             <div className="contact_div">
                 <div className="contact_container">
-                    <div className="relative_contact_container">
-                        <h2 className="contact_h2">Contact Me here</h2>
-                        <div className="form_div">
-                            <form
-                                className="contact-form"
-                                onSubmit={(e) => {
-                                    sendEmail(e);
-                                }}
-                            >
-                                <div className="input_div">
-                                    <input
-                                        type="text"
-                                        className="contact_input"
-                                        onKeyUp={(e) => {
-                                            this.keyup(e);
-                                        }}
-                                        autoComplete="no"
-                                        required
-                                        name="name"
-                                    />{" "}
-                                    <label
-                                        className="input_label"
-                                        htmlFor="name"
-                                    >
-                                        Name
-                                    </label>
-                                </div>
-                                <div className="input_div">
-                                    <input
-                                        type="email"
-                                        autoComplete="no"
-                                        onBlur={(e) => {
-                                            this.emailFocusOut(e);
-                                        }}
-                                        required
-                                        className="contact_input"
-                                        onKeyUp={(e) => {
-                                            this.keyup(e);
-                                        }}
-                                        name="email"
-                                    />
-                                    <label
-                                        className="input_label"
-                                        htmlFor="email"
-                                    >
-                                        Email
-                                    </label>
-                                    <Fade
-                                        bottom
-                                        collapse
-                                        when={this.state.startAnimation}
-                                    >
-                                        <div
-                                            className="invalid-feedback"
-                                            style={{ display: "block" }}
+                    <Roll top>
+                        <div className="relative_contact_container">
+                            <h2 className="contact_h2">Contact Me here</h2>
+                            <div className="form_div">
+                                <form
+                                    className="contact-form"
+                                    onSubmit={(e) => {
+                                        sendEmail(e);
+                                    }}
+                                >
+                                    <div className="input_div">
+                                        <input
+                                            type="text"
+                                            className="contact_input"
+                                            onKeyUp={(e) => {
+                                                this.keyup(e);
+                                            }}
+                                            autoComplete="no"
+                                            required
+                                            name="name"
+                                        />{" "}
+                                        <label
+                                            className="input_label"
+                                            htmlFor="name"
                                         >
-                                            Please enter a vaild email !
-                                        </div>
-                                    </Fade>
-                                </div>
-                                <div className="input_div">
-                                    <input
-                                        type="text"
-                                        autoComplete="no"
-                                        required
-                                        className="contact_input"
-                                        onKeyUp={(e) => {
-                                            this.keyup(e);
-                                        }}
-                                        name="subject"
-                                    />{" "}
-                                    <label
-                                        className="input_label"
-                                        htmlFor="subject"
-                                    >
-                                        Subject
-                                    </label>
-                                </div>
-                                <div className="input_div">
-                                    <input
-                                        type="text"
-                                        className="contact_input content"
-                                        onKeyUp={(e) => {
-                                            this.keyup(e);
-                                        }}
-                                        autoComplete="no"
-                                        required
-                                        name="content"
-                                    />
-                                    <label
-                                        className="input_label"
-                                        htmlFor="content"
-                                    >
-                                        Message
-                                    </label>
-                                </div>
-                                <div className="input_div">
-                                    <button
-                                        type="submit"
-                                        name="submit"
-                                        className="contact_input submit_btn"
-                                    >
-                                        Submit
-                                    </button>
-                                </div>
-                            </form>
+                                            Name
+                                        </label>
+                                    </div>
+                                    <div className="input_div">
+                                        <input
+                                            type="email"
+                                            autoComplete="no"
+                                            onBlur={(e) => {
+                                                this.emailFocusOut(e);
+                                            }}
+                                            required
+                                            className="contact_input"
+                                            onKeyUp={(e) => {
+                                                this.keyup(e);
+                                            }}
+                                            name="email"
+                                        />
+                                        <label
+                                            className="input_label"
+                                            htmlFor="email"
+                                        >
+                                            Email
+                                        </label>
+                                        <Fade
+                                            bottom
+                                            collapse
+                                            when={this.state.startAnimation}
+                                        >
+                                            <div
+                                                className="invalid-feedback"
+                                                style={{ display: "block" }}
+                                            >
+                                                Please enter a vaild email !
+                                            </div>
+                                        </Fade>
+                                    </div>
+                                    <div className="input_div">
+                                        <input
+                                            type="text"
+                                            autoComplete="no"
+                                            required
+                                            className="contact_input"
+                                            onKeyUp={(e) => {
+                                                this.keyup(e);
+                                            }}
+                                            name="subject"
+                                        />{" "}
+                                        <label
+                                            className="input_label"
+                                            htmlFor="subject"
+                                        >
+                                            Subject
+                                        </label>
+                                    </div>
+                                    <div className="input_div">
+                                        <input
+                                            type="text"
+                                            className="contact_input content"
+                                            onKeyUp={(e) => {
+                                                this.keyup(e);
+                                            }}
+                                            autoComplete="no"
+                                            required
+                                            name="content"
+                                        />
+                                        <label
+                                            className="input_label"
+                                            htmlFor="content"
+                                        >
+                                            Message
+                                        </label>
+                                    </div>
+                                    <div className="input_div">
+                                        <button
+                                            type="submit"
+                                            name="submit"
+                                            className="contact_input submit_btn"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
+                    </Roll>
                 </div>
                 <div
                     className="prev"

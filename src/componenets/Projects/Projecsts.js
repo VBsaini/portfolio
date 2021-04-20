@@ -6,7 +6,8 @@ import cpploginpage from "../../images/cpplogipage.png";
 import yelpcamp from "../../images/yelpcamp.png";
 import smartbrain from "../../images/smartbrain.png";
 import Rotate from "react-reveal/Rotate";
-
+// ####################### customhook ###########
+import Customproject from "../Customhook/Customproject";
 class Projects extends React.Component {
     constructor(props) {
         super(props);
@@ -22,191 +23,62 @@ class Projects extends React.Component {
                 <div className="project_container">
                     <div class="grid-container">
                         <Rotate top left>
-                            <div
-                                className="relative_container space"
-                                id="space"
-                            >
-                                <div className="projects_container">
-                                    <div className="inner-card">
-                                        <div className="back">
-                                            <div className="link_text">
-                                                <p className="links_text">
-                                                    Links
-                                                </p>
-                                            </div>
-                                            <div className="links">
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://github.com/vaibhav-saini-Edifice/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Github
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </p>
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://vaibhav-saini-edifice.github.io/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Live preview
-                                                        <i class="fab fa-chrome"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="front">
-                                            <img
-                                                src={space}
-                                                alt="Space shooter"
-                                                className="space_img project_img"
-                                            />
-                                            <h2 className="project_h2">
-                                                Space Shooter
-                                            </h2>
-                                            <p>
-                                                Space Shooter is a 2d game
-                                                developed with unity and c#
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Customproject
+                                linkArray={[
+                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
+                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                ]}
+                                title={"Space shooter"}
+                                desc={
+                                    "2d space shooter game made with unity and c#"
+                                }
+                                Class={"relative_container space"}
+                                img={space}
+                                linksText={["github", "live preview"]}
+                            ></Customproject>
                         </Rotate>
                         <Rotate top right>
-                            <div className="relative_container login">
-                                <div className="projects_container">
-                                    <div className="inner-card">
-                                        <div className="front">
-                                            <img
-                                                src={cpploginpage}
-                                                alt="cpp login page"
-                                                className=" project_img h-80"
-                                            />
-                                            <h2 className="project_h2">
-                                                Windows clr form
-                                            </h2>
-                                            <p>
-                                                Windows clr form made with c++
-                                            </p>
-                                        </div>
-                                        <div className="back">
-                                            <p className="links_text">Links</p>
-                                            <div className="links">
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://github.com/vaibhav-saini-Edifice/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Github
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </p>
-                                                <p className="links_text disabled">
-                                                    <a>Live preview</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Rotate>
+                            <Customproject
+                                linkArray={[
+                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
+                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                ]}
+                                title={"Smart Brain"}
+                                desc={
+                                    "Smart Brain is a website made with reactjs"
+                                }
+                                Class={"relative_container brain"}
+                                img={smartbrain}
+                                linksText={["github", "live preview"]}
+                            ></Customproject>
+                        </Rotate>{" "}
                         <Rotate top left>
-                            <div className="relative_container brain">
-                                <div className="projects_container">
-                                    <div className="inner-card">
-                                        <div className="front">
-                                            <img
-                                                src={smartbrain}
-                                                alt="smartbrain"
-                                                className=" project_img"
-                                            />
-                                            <h2 className="project_h2">
-                                                Smart Brain
-                                            </h2>
-                                            <p>
-                                                Smart Brain is a website made
-                                                with reactjs
-                                            </p>
-                                        </div>
-                                        <div className="back">
-                                            <p className="links_text">Links</p>
-                                            <div className="links">
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://github.com/vaibhav-saini-Edifice/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Github
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </p>
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://vaibhav-saini-edifice.github.io/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Live preview
-                                                        <i class="fab fa-chrome"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Customproject
+                                linkArray={[
+                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
+                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                ]}
+                                Class={"relative_container login"}
+                                title={"Windows clr form"}
+                                desc={"windows clr form made with c++"}
+                                img={cpploginpage}
+                                linksText={["github", "live preview"]}
+                            ></Customproject>
                         </Rotate>
                         <Rotate top right>
-                            <div className="relative_container yelpcamp">
-                                <div className="projects_container">
-                                    <div className="inner-card">
-                                        <div className="front">
-                                            <img
-                                                src={yelpcamp}
-                                                alt="yelpcamp"
-                                                className=" project_img"
-                                            />
-                                            <h2 className="project_h2">
-                                                YelpCamp
-                                            </h2>
-                                            <p>
-                                                Yelpcamp is a webtsite made with
-                                                node js
-                                            </p>
-                                        </div>
-                                        <div className="back">
-                                            <p className="links_text">Links</p>
-                                            <div className="links">
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://github.com/vaibhav-saini-Edifice/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Github
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </p>
-                                                <p className="links_text">
-                                                    <a
-                                                        href="https://vaibhav-saini-edifice.github.io/Space_shooter"
-                                                        rel="noreferrer"
-                                                        target="_blank"
-                                                    >
-                                                        Live preview
-                                                        <i class="fab fa-chrome"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Customproject
+                                linkArray={[
+                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
+                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                ]}
+                                Class={"relative_container yelpcamp"}
+                                title={"YelpCamp"}
+                                desc={
+                                    "Yelpcamp is a webtsite made with node js"
+                                }
+                                img={yelpcamp}
+                                linksText={["github", "live preview"]}
+                            ></Customproject>
                         </Rotate>
                     </div>
                 </div>

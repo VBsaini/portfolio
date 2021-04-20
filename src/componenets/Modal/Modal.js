@@ -23,7 +23,7 @@ function Modal(props) {
                         </button>
                     </div>{" "}
                     <div className="modal modal_hover">
-                        <p>Hover on top of website for navbar</p>
+                        <p>Click on top of website for navbar</p>
                         <button className="modal_btn" onClick={handleclick}>
                             Close
                         </button>

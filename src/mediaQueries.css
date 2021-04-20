@@ -13,11 +13,22 @@
     .project_img {
         height: 18vh;
     }
+    .links_text {
+        font-size: 33px;
+        letter-spacing: 5px;
+    }
 }
 
 @media only Screen and (max-width: 1104px) {
     .modal p {
         font-size: 20px;
+    }
+    .a-links:hover {
+        color: white;
+        letter-spacing: 5px;
+    }
+    .links_text {
+        font-size: 25px;
     }
     li {
         font-size: 25px;
@@ -86,6 +97,13 @@
     .project_h2 {
         font-size: 18px;
     }
+    .a-links:hover {
+        color: white;
+        letter-spacing: 5px;
+    }
+    .links_text {
+        font-size: 20px;
+    }
     .modal p {
         font-size: 15px;
     }
@@ -94,6 +112,24 @@
     }
     .front p {
         font-size: 8px;
+    }
+    @media only Screen and (max-height: 531px) {
+        .prev,
+        .next {
+            padding-top: 20vh;
+        }
+    }
+    @media only Screen and (max-height: 400px) {
+        .prev,
+        .next {
+            padding-top: 15vh;
+        }
+    }
+    @media only Screen and (max-height: 350px) {
+        .prev,
+        .next {
+            padding-top: 12vh;
+        }
     }
 }
 @media only Screen and (max-width: 784px) {
@@ -143,9 +179,24 @@
         width: 150%;
         height: 150%;
     }
+    @media only Screen and (max-height: 531px) {
+        .prev,
+        .next {
+            padding-top: 20vh;
+        }
+    }
+    @media only Screen and (max-height: 400px) {
+        .prev,
+        .next {
+            padding-top: 15vh;
+        }
+    }
 }
 @media only Screen and (max-width: 660px) {
     li {
+        font-size: 15px;
+    }
+    .links_text {
         font-size: 15px;
     }
     .project_h2 {
@@ -225,6 +276,9 @@
     .contact_h2 {
         font-size: 20px;
         letter-spacing: 2px;
+    }
+    .links_text {
+        font-size: 10px;
     }
 }
 
