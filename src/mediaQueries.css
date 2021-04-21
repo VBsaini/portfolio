@@ -175,10 +175,6 @@
         margin-top: 30px;
         font-size: 15px;
     }
-    .particle {
-        width: 150%;
-        height: 150%;
-    }
     @media only Screen and (max-height: 531px) {
         .prev,
         .next {
