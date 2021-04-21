@@ -26,7 +26,7 @@ function Particle() {
             },
         },
     };
-    if (document.body.clientWidth < 700) {
+    if (document.body.clientHeight < 700) {
         options = {
             particles: {
                 number: {
@@ -52,7 +52,7 @@ function Particle() {
             },
         };
     }
-    if (document.body.clientWidth < 600) {
+    if (document.body.clientHeight < 600) {
         options = {
             particles: {
                 number: {
@@ -78,7 +78,7 @@ function Particle() {
             },
         };
     }
-    if (document.body.clientWidth < 500) {
+    if (document.body.clientHeight < 500) {
         options = {
             particles: {
                 number: {
@@ -104,6 +104,7 @@ function Particle() {
             },
         };
     }
+
     return (
         <div className="particle" id="particle">
             <Particles
