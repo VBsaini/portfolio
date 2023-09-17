@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f5444f80.css",
+    "main.js": "/portfolio/static/js/main.33ae1650.js",
+    "static/js/787.5db04c4e.chunk.js": "/portfolio/static/js/787.5db04c4e.chunk.js",
+    "static/media/yelpcamp.png": "/portfolio/static/media/yelpcamp.860863b48455abb06f68.png",
+    "static/media/space_shooter.png": "/portfolio/static/media/space_shooter.d039b4e1dae6d0356172.png",
+    "static/media/smartbrain.png": "/portfolio/static/media/smartbrain.198b314c5a220e17ea03.png",
+    "static/media/cpplogipage.png": "/portfolio/static/media/cpplogipage.dff9b1dd11bff9976ed6.png",
+    "static/media/mongo.png": "/portfolio/static/media/mongo.451e142aebdcc23c976a.png",
+    "static/media/html.png": "/portfolio/static/media/html.9314c96de05bfa3775e8.png",
+    "static/media/python.png": "/portfolio/static/media/python.605892139a040190bde6.png",
+    "static/media/css.png": "/portfolio/static/media/css.90c5bcc850aca7be84ba.png",
+    "static/media/nodejs.png": "/portfolio/static/media/nodejs.9f8827949b2d9cca4ba2.png",
+    "static/media/cpp.jpg": "/portfolio/static/media/cpp.1240ce157b70fb399c6c.jpg",
+    "static/media/gamedev.png": "/portfolio/static/media/gamedev.9170e5976135aa2243e2.png",
+    "static/media/csharp.jpg": "/portfolio/static/media/csharp.fc430729bfa8902c06fd.jpg",
+    "static/media/softwaredev.png": "/portfolio/static/media/softwaredev.a85868d3e806a21a24d7.png",
+    "static/media/js.png": "/portfolio/static/media/js.3af860a33e3d69c5d408.png",
+    "index.html": "/portfolio/index.html",
+    "main.f5444f80.css.map": "/portfolio/static/css/main.f5444f80.css.map",
+    "main.33ae1650.js.map": "/portfolio/static/js/main.33ae1650.js.map",
+    "787.5db04c4e.chunk.js.map": "/portfolio/static/js/787.5db04c4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5444f80.css",
+    "static/js/main.33ae1650.js"
+  ]
+}
