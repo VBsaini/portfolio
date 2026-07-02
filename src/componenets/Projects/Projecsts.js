@@ -21,8 +21,8 @@ class Projects extends React.Component {
                         <Rotate top left>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/Space_shooter",
-                                    "https://vaibhav-saini-edifice.github.io/Space_shooter",
+                                    "https://github.com/vbsaini/Space_shooter",
+                                    "https://vbsaini.github.io/Space_shooter",
                                 ]}
                                 title={"Space shooter"}
                                 desc={
@@ -36,7 +36,7 @@ class Projects extends React.Component {
                         <Rotate top right>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/smart-brain",
+                                    "https://github.com/vbsaini/smart-brain",
                                     "https://smart-brain-vishu.herokuapp.com/",
                                 ]}
                                 title={"Smart Brain"}
@@ -51,7 +51,7 @@ class Projects extends React.Component {
                         <Rotate top left>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/loginPage",
+                                    "https://github.com/vbsaini/loginPage",
                                     "#",
                                 ]}
                                 Class={"relative_container login disabled"}
@@ -64,7 +64,7 @@ class Projects extends React.Component {
                         <Rotate top right>
                             <Customproject
                                 linkArray={[
-                                    "https://github.com/vaibhav-saini-Edifice/yelpcamp",
+                                    "https://github.com/vbsaini/yelpcamp",
                                     "https://yelpcamp-vishu.herokuapp.com/",
                                 ]}
                                 Class={"relative_container yelpcamp"}
