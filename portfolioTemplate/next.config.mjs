@@ -3,9 +3,22 @@ import { withContentCollections } from "@content-collections/next";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  // Replace YOUR_REPO_NAME with your GitHub repository name
+  basePath: "/YOUR_REPO_NAME",
+  assetPrefix: "/YOUR_REPO_NAME",
+
+  output: "export",
+  trailingSlash: true,
+
+  images: {
+    unoptimized: true,
+  },
+
   turbopack: {
     root: import.meta.dirname,
   },
+
   async headers() {
     return [
       {
@@ -33,5 +46,4 @@ const nextConfig = {
   },
 };
 
-// withContentCollections must be the outermost plugin
 export default withContentCollections(nextConfig);
