@@ -26,14 +26,14 @@ jobs:
           node-version: 22
 
       - run: npm install
-        working-directory: frontend
+        working-directory: portfolioTemplate
 
       - run: npm run build
-        working-directory: frontend
+        working-directory: portfolioTemplate
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: portfolioTemplate/dist
 
   deploy:
     needs: build
