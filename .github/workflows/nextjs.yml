@@ -33,7 +33,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: portfolioTemplate/dist
+          path: portfolioTemplate/out
 
   deploy:
     needs: build
